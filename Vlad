@@ -1,0 +1,142 @@
+<html>
+<head>
+<meta charset="utf-8">
+<title>Галерея CAT'S</title>
+
+<style>
+  img {
+   border: 8px solid #FF0000;
+   }
+</style>
+<style>
+img {
+  margin: 5spx;
+  margin: 5px;
+}
+</style>
+<style>
+echo "# catsgalery.ru" >> README.md
+git init
+git add README.md
+git commit -m "первый коммит"
+git branch -M main
+git remote add origin https://github.com/vlad59boss/catsgalery.ru.git
+git push -u origin main
+</style>
+<style>
+git remote add origin https://github.com/vlad59boss/catsgalery.ru.git
+git branch -M main
+git push -u origin main
+</style>
+</head>
+
+
+<center><body bgcolor='grey' ><center>
+<table>
+<td>
+<tr>
+<float><img src = "1000.webp" width="200" height="200"></float>
+</tr>
+<body>
+<p style="color:#990000">Классно!!</p>
+</body>
+<tr>
+<float><img src = "1001.webp" width="200" height="200"></float>
+</tr>
+</body>
+<tr>
+<float><img src = "1002.webp" width="200" height="200"></float>
+</tr>
+<body color="orange">
+<p style="color:#FF6600"> Круто!!</p>
+</body>
+<tr>
+<float><img src = "1003.webp" width="200" height="200"></float>
+</tr>
+<tr>
+<float><img src = "1004.webp" width="200" height="200"></float>
+</tr>
+<tr>
+<float><img src = "1005.webp" width="200" height="200"></float>
+</tr>
+<tr>
+<float><img src = "1006.webp" width="200" height="200"></float>
+</tr>
+</td>
+<body>
+<p style="color:#00FF00">МОЙ САМЫЙ СЛОЖНЫЙ САААЙТ</p>
+
+
+<b><h1 align='center'><font color='light blue' size='6' face='Arial'> Мои Коты  </font></h1></b>
+
+<img src = "2221.webp" width = "540" height = "380"  id = "img">  <br>
+<div id='printt' align='center'></div>
+    <img src = "l11.webp"  width = "100" height = "100" onClick = "javascript: l_click()"> 
+	<img src = "r12.png" width = "100" height = "100" onClick = "javascript: r_click()">
+<p style="color:#006600">Это мои КОТЫ они тебе понравились? Если понравились нажми на эту кнопку просто так	!!</p>
+<img src = "strelka.webp" width="250" height="99">
+<center><div class="like-container">
+  <button class="like-button">👍</button>
+  <span class="like-count">пж нажми просто чешется блоха попала</span>
+</div>
+<style>
+.like-container {
+  display: flex;
+  align-items: center;
+}
+.like-button {
+  font-size: 24px;
+  border: none;
+  background: none;
+  cursor: pointer;
+  padding: 0;
+  margin-right: 8px;
+}
+.like-count {
+  font-size: 18px;
+}
+</style>
+
+<td colspan="7" align="left">
+<font size="4">Copyright 2024,by Docuchaev Vladislav</font></td>
+<p>Больше котов здесь</p>
+<a href="https://www.ohcat.ru">Посетите сайт котиков и всё о них</a>
+<br>
+<br>
+<br>
+<br>
+<video src="CatsFunny.mp4" width="640" height="640" controls>
+</video>
+<p style="color:003300">Если тебе понравился сайт просмотри все видео и сайты</p>
+<p style="color:003300">А вот песня про котов</p>
+<audio src="kot.mp3" controls></audio>
+	</center>
+<script>
+var imgs=['1000.webp','1001.webp','1002.webp','1003.webp','1004.webp','1005.webp','1006.webp'];
+var text=['кот1', 'кот2', 'кот3', 'кот4', 'кот5','кот6','кот7'];
+var now=-1; 
+
+function r_click() 
+{ 
+ var obj = document.getElementById("img");
+ 
+   if (now < imgs.length-1)  
+   now++ 
+   else
+     now = 0;
+     obj.src = imgs[now];	
+	printt.textContent = text[now];	 
+}
+
+function l_click() 
+{     
+ var obj = document.getElementById("img");
+if (now > 0) now--;
+  else
+    now = imgs.length-1;
+    obj.src = imgs[now];	
+	printt.textContent = text[now];	 	
+}
+</script>
+</body>
+</html>
